@@ -15,10 +15,6 @@
 </script>
 
 <style scoped>
-main {
-  padding: 2rem;
-}
-
 footer {
   background-color: #f0f0f0;
   padding: 1rem;

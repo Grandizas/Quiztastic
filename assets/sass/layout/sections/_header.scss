@@ -1,0 +1,26 @@
+@use '~/assets/sass/abstracts/colors' as *;
+@use '~/assets/sass/abstracts/variables' as *;
+
+.section-header {
+  display: flex;
+  align-items: center;
+  min-height: calc(85vh);
+  padding: 0 $padding-page;
+  background-color: var(--color-vanilla);
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__left {
+    .heading-description {
+      max-width: 60rem;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+  }
+}

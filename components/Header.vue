@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <div class="header-title">Quiztastic</div>
+    <h1 class="header-title">
+      <NuxtLink to="/">Quiztastic</NuxtLink>
+    </h1>
     <HeaderNavigation />
     <div class="header-start">
       <Button width="wide" design="stroke">Get Started</Button>

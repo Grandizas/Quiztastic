@@ -2,16 +2,23 @@
 @use '../abstracts/variables' as *;
 
 .header {
-  padding: 2rem;
   gap: 1rem;
   display: flex;
+  height: 11rem;
   align-items: center;
+  padding: 2rem $padding-page;
   justify-content: space-between;
   background-color: var(--color-vanilla);
 
   &-title {
+    margin: 0;
+    cursor: pointer;
     font-size: $font-large;
-    color: var(--color-black);
+
+    a {
+      text-decoration: none;
+      color: var(--color-black);
+    }
   }
 
   &-navigation {

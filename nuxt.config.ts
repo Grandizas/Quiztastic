@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: ['@nuxt/eslint'],
-  css: ['~/assets/sass/style.scss'],
+  css: ['~/assets/sass/style.scss', 'animate.css/animate.min.css'],
   vite: {
     css: {
       preprocessorOptions: {
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       stylistic: {
         semi: true,
         indent: 'tab',
-      }
-    }
-  }
+      },
+    },
+  },
 })

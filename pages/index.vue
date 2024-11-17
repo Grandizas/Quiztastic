@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <h1>Welcome to Quiztastic</h1>
-    <p>Test your knowledge with our amazing quizzes!</p>
-    <NuxtLink to="/quiz" class="cta-button">Start a Quiz</NuxtLink>
+  <div class="home">
+    <SectionHeader />
   </div>
 </template>
 

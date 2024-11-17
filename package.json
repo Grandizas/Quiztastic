@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.6.1",
-    "animate.css": "^4.1.1",
     "chart.js": "^4.4.6",
     "firebase": "^11.0.2",
     "helmet": "^8.0.0",

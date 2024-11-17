@@ -1,7 +1,7 @@
 <template>
   <button
     :disabled="disabled"
-    :class="[{ rounded }, 'button', color, design, width]"
+    :class="[{ rounded }, 'button animate__bounce', color, design, width]"
     type="button"
     @click="emit('click', $event)"
   >
@@ -10,6 +10,8 @@
 </template>
 
 <script lang="ts" setup>
+import 'animate.css';
+
 defineProps({
   disabled: Boolean,
   rounded: Boolean,
@@ -28,9 +30,9 @@ defineProps({
     default: 'fill',
     validator: (val: string) => ['fill', 'stroke'].includes(val),
   },
-})
+});
 
 const emit = defineEmits<{
-  (event: 'click', value: MouseEvent): void
-}>()
+  (event: 'click', value: MouseEvent): void;
+}>();
 </script>

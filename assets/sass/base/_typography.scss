@@ -1,1 +1,39 @@
+@use '~/assets/sass/abstracts/colors' as *;
+@use '~/assets/sass/abstracts/variables' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.heading-1 {
+  line-height: 1;
+  margin: 2rem 0;
+  font-size: $font-very-large;
+}
+
+.heading-2 {
+  font-size: $font-large;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: $font-mid;
+}
+
+.heading-description {
+  font-size: $font-mid;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@each $color in (black, white, pink, gray) {
+  .color-#{'' + $color} {
+    color: var(--color-#{$color});
+  }
+}
+
+@each $position in (left, center, right) {
+  .text-align-#{$position} {
+    text-align: $position;
+  }
+}
