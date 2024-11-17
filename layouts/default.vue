@@ -1,12 +1,6 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/quiz">Quiz</NuxtLink>
-      </nav>
-    </header>
+    <Header />
     <main>
       <slot />
     </main>
@@ -21,16 +15,6 @@
 </script>
 
 <style scoped>
-header {
-  background-color: #f0f0f0;
-  padding: 1rem;
-}
-
-nav {
-  display: flex;
-  gap: 1rem;
-}
-
 main {
   padding: 2rem;
 }

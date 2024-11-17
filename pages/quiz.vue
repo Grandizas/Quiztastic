@@ -2,7 +2,9 @@
   <div>
     <h1>Quiz</h1>
     <p v-if="!quizStarted">Ready to start the quiz?</p>
-    <button v-if="!quizStarted" @click="startQuiz" class="start-button">Start Quiz</button>
+    <button v-if="!quizStarted" @click="startQuiz" class="start-button">
+      Start Quiz
+    </button>
     <div v-else>
       <!-- Add quiz components here -->
       <p>Quiz questions will appear here</p>
@@ -11,14 +13,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const quizStarted = ref(false);
+const quizStarted = ref(false)
 
 const startQuiz = () => {
-  quizStarted.value = true;
+  quizStarted.value = true
   // Add logic to fetch quiz questions or set up the quiz
-};
+}
 </script>
 
 <style scoped>
@@ -27,7 +29,7 @@ h1 {
 }
 
 .start-button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;

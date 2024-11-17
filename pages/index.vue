@@ -18,7 +18,7 @@ h1 {
 
 .cta-button {
   display: inline-block;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   text-decoration: none;

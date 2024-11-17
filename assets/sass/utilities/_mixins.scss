@@ -1,0 +1,29 @@
+@use '../abstracts/colors' as *;
+
+@mixin background-variant($type) {
+  @each $color in (cherry, vanilla, pinky) {
+    &.#{$color} {
+      /* * --- Fill --- * */
+      @if $type == 'fill' {
+        color: var(--color-white);
+        background-color: var(--color-#{$color});
+        border: 1px solid var(--color-#{$color});
+
+        &:hover {
+          filter: brightness(85%);
+        }
+
+        /* * --- Stroke --- * */
+      } @else if $type == 'stroke' {
+        color: var(--color-#{$color});
+        background-color: transparent;
+        border: 1px solid var(--color-#{$color});
+
+        &:hover {
+          color: var(--color-white);
+          background-color: var(--color-#{$color});
+        }
+      }
+    }
+  }
+}

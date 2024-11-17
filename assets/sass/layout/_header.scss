@@ -1,0 +1,28 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.header {
+  padding: 2rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-vanilla);
+
+  &-title {
+    font-size: $font-large;
+    color: var(--color-black);
+  }
+
+  &-navigation {
+    display: flex;
+    gap: 2rem;
+
+    &__anchor {
+      font-weight: bold;
+      font-size: $font-mid;
+      text-decoration: none;
+      color: var(--color-black);
+    }
+  }
+}

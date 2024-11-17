@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+@use '../utilities/mixins' as *;
+
+.button {
+  cursor: pointer;
+  padding: 1.5rem;
+  font-weight: bold;
+  font-size: $font-mid;
+  border-radius: $border-radius-small;
+
+  &.rounded {
+    border-radius: 4rem;
+  }
+
+  &.wide {
+    min-width: 23rem;
+  }
+  &.middle {
+    min-width: 17rem;
+  }
+
+  &.fill {
+    @include background-variant('fill');
+  }
+  &.stroke {
+    @include background-variant('stroke');
+  }
+}
