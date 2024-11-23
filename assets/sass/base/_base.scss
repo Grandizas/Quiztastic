@@ -4,5 +4,10 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Funnel Sans", serif;
+  box-sizing: border-box;
+  font-family: 'Funnel Sans', serif;
+}
+
+* {
+  box-sizing: inherit;
 }

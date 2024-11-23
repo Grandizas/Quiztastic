@@ -1,7 +1,12 @@
 @use '~/assets/sass/abstracts/colors' as *;
 @use '~/assets/sass/abstracts/variables' as *;
 
+@use '@flaticon/flaticon-uicons/css/thin/rounded';
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+i {
+  display: flex;
+}
 
 .heading-1 {
   line-height: 1;
@@ -11,6 +16,11 @@
 
 .heading-2 {
   font-size: $font-large;
+}
+
+.standard {
+  margin: 0;
+  font-size: $font-mid;
 }
 
 .subtitle {

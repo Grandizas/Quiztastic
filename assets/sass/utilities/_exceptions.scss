@@ -1,0 +1,27 @@
+@use '~/assets/sass/abstracts/colors' as *;
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+.bg-green {
+  background-color: var(--color-green);
+}
+.bg-red {
+  background-color: var(--color-red);
+}
+
+.c-blue {
+  color: var(--color-blue);
+}
+.c-yellow {
+  color: var(--color-yellow);
+}
+.c-green {
+  color: var(--color-green);
+}
+.c-red {
+  color: var(--color-red);
+}

@@ -22,7 +22,9 @@ const props = defineProps({
     type: String,
     default: '',
     validator: (value: string) => {
-      return ['heading-description', 'subtitle', ''].includes(value);
+      return ['heading-description', 'subtitle', 'standard', ''].includes(
+        value
+      );
     },
   },
   /** @param {string} [props.color='black'] - The text color. Must be one of 'black', 'white', 'pink', or 'gray'. */

@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <SectionHeader />
+    <SectionQuizes />
   </div>
 </template>
 
