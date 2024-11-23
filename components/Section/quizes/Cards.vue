@@ -1,12 +1,14 @@
 <template>
-  <div v-for="card in cards" :class="`section-quizes__card bg-${card.color}`">
-    <div :class="`section-quizes__card--cover c-${card.color}`">
-      <i :class="card.icon" />
-    </div>
+  <div class="section-quizes__card--wrapper">
+    <div v-for="card in cards" :class="`section-quizes__card bg-${card.color}`">
+      <div :class="`section-quizes__card--cover c-${card.color}`">
+        <i :class="card.icon" />
+      </div>
 
-    <Text tag="p" tag-type="standard" color="white" align="center">
-      {{ card.text }}
-    </Text>
+      <Text tag="p" tag-type="standard" color="white" align="center">
+        {{ card.text }}
+      </Text>
+    </div>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <button
     :disabled="disabled"
-    :class="[{ rounded }, 'button animate__bounce', color, design, width]"
-    type="button"
+    :class="[{ rounded }, 'button', color, design, width]"
+    :type="type"
     @click="emit('click', $event)"
   >
     <slot />
@@ -10,7 +10,6 @@
 </template>
 
 <script lang="ts" setup>
-
 defineProps({
   disabled: Boolean,
   rounded: Boolean,
@@ -28,6 +27,11 @@ defineProps({
     type: String,
     default: 'fill',
     validator: (val: string) => ['fill', 'stroke'].includes(val),
+  },
+  type: {
+    type: String as PropType<HTMLButtonElement['type']>,
+    default: 'button',
+    validator: (val: string) => ['button', 'submit', 'reset'].includes(val),
   },
 });
 

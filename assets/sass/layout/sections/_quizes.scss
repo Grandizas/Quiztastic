@@ -3,8 +3,16 @@
 @use '~/assets/sass/utilities/mixins' as *;
 
 .section-quizes {
-  gap: 2rem;
+  gap: 10rem;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  &__card--wrapper {
+    gap: 3rem;
+    display: flex;
+  }
 
   &__card {
     padding: 2rem;
